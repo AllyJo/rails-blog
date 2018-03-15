@@ -1,0 +1,8 @@
+<h3>Hello <%= current_user.username %>!</h3>
+<% if @user != current_user %>
+  <%= render partial: 'reader' %>
+<% end %>
+
+<% if @user == current_user %>
+  <%= render partial: 'creator' %>
+<% end %>

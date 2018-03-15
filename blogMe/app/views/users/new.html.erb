@@ -1,0 +1,19 @@
+<h2>Create Your Account</h2>
+ <%= form_with model: @user do |f| %>
+ <div>
+
+ <%= f.label :username %>
+ <%= f.text_field :username, autofocus: true %>
+ </div>
+ <div>
+
+ <%= f.label :email %>
+ <%= f.text_field :email %>
+ </div>
+ <div>
+
+ <%= f.label :password %>
+ <%= f.text_field :password %>
+ </div>
+ <%= f.submit "Create Account" %>
+ <% end %>
